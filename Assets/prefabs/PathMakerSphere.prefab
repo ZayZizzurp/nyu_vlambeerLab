@@ -97,11 +97,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floorMax: 0
+  floorTiles:
+  - {fileID: 4113209856346078, guid: 65a6189e1bac1f549afc3dc95369929d, type: 2}
+  - {fileID: 4238385279173804, guid: b2b79d82441efa94a9cc7b09d77b46b7, type: 2}
+  - {fileID: 4522236032622722, guid: 1e64a204c5b42cb45b059b3f46a4d9bb, type: 2}
+  - {fileID: 4635461782094254, guid: 48fdcd57ac67b4f4c9c6c5bdd9287ba3, type: 2}
   RandomValue: 0
   instantiateVal: 0
-  floorPrefabs: {fileID: 4113209856346078, guid: 65a6189e1bac1f549afc3dc95369929d,
-    type: 2}
+  turnChance: 0
   pathmakerSpherePrefab: {fileID: 4656389153494856}
+  rockTilePrefab: {fileID: 4522236032622722, guid: 1e64a204c5b42cb45b059b3f46a4d9bb,
+    type: 2}
+  ringTilePrefab: {fileID: 4238385279173804, guid: b2b79d82441efa94a9cc7b09d77b46b7,
+    type: 2}
+  treeTilePrefab: {fileID: 4635461782094254, guid: 48fdcd57ac67b4f4c9c6c5bdd9287ba3,
+    type: 2}
 --- !u!135 &135668044195186152
 SphereCollider:
   m_ObjectHideFlags: 1

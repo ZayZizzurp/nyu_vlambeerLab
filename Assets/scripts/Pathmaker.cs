@@ -23,14 +23,19 @@ public class Pathmaker : MonoBehaviour {
 	public int floorMax;
 	public static int globalTileCount = 0;
 	
+	public Transform [] floorTiles;
+	
+	
 	
 	public float RandomValue;
 	public float instantiateVal;
 
 	public float turnChance;
 		
-	public Transform floorPrefabs; //assign in inspector
 	public Transform pathmakerSpherePrefab; //assign in inspector
+	public Transform rockTilePrefab; //assign in inspector
+	public Transform ringTilePrefab; //assign in inspector
+	public Transform treeTilePrefab; //assign in inspector
 	
 
 
@@ -62,8 +67,8 @@ public class Pathmaker : MonoBehaviour {
 				Instantiate(pathmakerSpherePrefab, transform.position, Quaternion.identity);
 			}
 
-			         
-			Instantiate(floorPrefabs, transform.position, Quaternion.identity);
+			         int randomIndex = Random.Range(0, floorTiles.Length);
+			Instantiate(floorTiles[randomIndex], transform.position, Quaternion.identity);
 			         
 			transform.Translate(0f, 0f, 5f);
 			floorCounter++;
